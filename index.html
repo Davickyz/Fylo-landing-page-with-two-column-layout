@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor || Fylo landing page</title>
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/firstSection.css">
+  <link rel="stylesheet" href="styles/secondSection.css">
+  <link rel="stylesheet" href="styles/profileCard.css">
+  <link rel="stylesheet" href="styles/thirdSection.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+  <!-- Navbar and Header -->
+  <nav>
+    <div class="logo-section">
+      <img src="images/logo.svg" alt="Fylo logo">
+    </div>
+
+    <div class="navigations-div">
+      <ol class="navigations">
+        <li class="nav-link">Features</li>
+        <li class="nav-link">Team</li>
+        <li class="nav-link">Sign in</li>
+      </ol>
+    </div>
+  </nav>
+  <!-- The first part of the body -->
+  <section class="section-1">
+    <div class="content-1">
+      <p class="content-1-sub-1">
+        All your files in one secure
+        location, accessible anywhere
+      </p>
+      <p class="content-1-sub-2">
+        Fylo stores your most important files in one secure location. Access
+        them wherever you need, share and collaborate with friends, family,
+        and co-workers.
+      </p>
+      <input class="content-1-input js-input-email"
+        onkeydown="handleEmailKeydown(event)"
+        type="email" placeholder="Enter your email....">
+      <button class="content-1-btn general-opacity"
+        onclick="verifyEmail()">Get Started</button>
+      <p class="js-email-verification"></p>
+    </div>
+
+    <div class="illustration1">
+      <img src="images/illustration-1.svg" alt="illustration-1">
+    </div>
+  </section>
+  <!-- The second part of the body -->
+  <section class="section-2">
+    <div class="content-2">
+      <p class="content-2-sub-1">
+        Stay productive, wherever you are
+      </p>
+      <p class="content-2-sub-2">
+        Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.
+      </p>
+      <p class="content-2-sub-2">
+        Securely share files and folders with friends, family and colleagues for
+        live collaboration. No email attachments required!
+      </p>
+      <div class="how-it-works general-opacity">
+        <div class="how-it-works-text">
+          See how Fylo works
+        </div>
+        <div class="icon-arrow">
+            <img src="images/icon-arrow.svg" alt="icon-arrow">
+        </div>
+      </div>
+      <!-- small component card -->
+      <div class="profile-card">
+        <div class="icon-quotes">
+          <img src="images/icon-quotes.svg" alt="icon-quotes">
+        </div>
+        <p class="profile-card-text">
+          Fylo has improved our team productivity by an
+          order of magnitude. Since making the switch
+          our team has become a well-oiled collaboration
+          machine.
+        </p>
+
+        <div class="profile">
+          <div class="profile-img">
+            <img class="profile-img" src="images/avatar-testimonial.jpg" alt="avatar-testimonial">
+          </div>
+          <div class="profile-decription">
+            <p class="profile-name">
+              Kyle Burton
+            </p>
+            <p class="profile-name-desricption">
+              Founder & CEO, Huddle
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="illustration2">
+      <img src="images/illustration-2.svg" alt="illustration-2">
+    </div>
+  </section>
+  <!-- The last part before the footer -->
+  <section class="section-3">
+    <div class="access">
+      <p class="access-topic">
+        Get early access today
+      </p>
+      <p class="access-description">
+        It only takes a minute to sign up and our free starter tier is
+        extremely generous. If you have any questions, our support team
+        would be happy to help you.
+      </p>
+    </div>
+
+    <div class="get-started">
+      <div class="get-started-input">
+        <input class="get-started-input-space" type="email" placeholder="email@example.com">
+      </div>
+      <div>
+        <button class="content-3-btn general-opacity">Get Started For Free</button>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-logo-section">
+      <img src="images/footer-logo.svg" alt="logo">
+    </div>
+    <div class="footer-nav">
+      <div>
+        <div class="footer-text-mb footer-icon-div-flex">
+          <div class="footer-icon">
+            <img src="images/icon-phone.svg" alt="icon-phone">
+          </div>
+          <div>Phone: +1-543-123-4567</div>
+        </div>
+        <div class="footer-text-mb footer-icon-div-flex">
+          <div class="footer-icon">
+            <img src="images/icon-email.svg" alt="icon-email">
+          </div>
+          <div>example@fylo.com</div>
+        </div>
+      </div>
+      <div class="footer-div-mt">
+        <ol>
+          <li class="footer-text-mb">About Us</li>
+          <li class="footer-text-mb">Jobs</li>
+          <li class="footer-text-mb">Press</li>
+          <li class="footer-text-mb">Blog</li>
+        </ol>
+      </div>
+      <div class="footer-div-mt">
+        <ol>
+          <li class="footer-text-mb">Contact Us</li>
+          <li class="footer-text-mb">Terms</li>
+          <li class="footer-text-mb">Privacy</li>
+        </ol>
+      </div>
+      <div class="footer-icon-div-flex footer-div-mt social-media-icon-div">
+        <div class="footer-icon social-media-icon">
+          <img src="images/icon-email.svg" alt="icon-email">
+        </div>
+        <div class="footer-icon social-media-icon">
+          <img src="images/icon-email.svg" alt="icon-email">
+        </div>
+        <div class="footer-icon social-media-icon">
+          <img src="images/icon-email.svg" alt="icon-email">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+
+</body>
+</html>

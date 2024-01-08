@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+ol{
+  list-style-type: none;
+}
+
+img{
+  width: 100%;
+}
+
+.general-opacity{
+  transition: opacity 0.15s,
+  cursor 0.15s;
+}
+
+.general-opacity:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
